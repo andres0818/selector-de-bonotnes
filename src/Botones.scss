@@ -9,7 +9,7 @@
 #d8,
 #d9,
 #d10 {
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 #a4,
@@ -18,7 +18,11 @@
 #d4,
 #e4,
 #f4 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    text-align: center;
 }
 
 .botones {
@@ -27,7 +31,7 @@
     width: 500px;
     height: 500px;
     gap: 5px;
- 
+
 
 
     &__caja {
@@ -38,14 +42,15 @@
         justify-content: space-between;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
-    
+
     &__asientos {
         display: flex;
-        width: 480px;
-        text-align: center;
+        width: 500px;
         justify-content: space-between;
-                
+        margin-bottom: 40px;
+
     }
 
     &__container {
@@ -65,7 +70,30 @@
         }
     }
 
-    &__filaD {
-        margin-left: 30px;
+    &__h4 {
+        height: 23px;
     }
+
+    &__salidaRapida {
+        position: absolute;
+        text-align: center;
+        transform: translatex(1px) translateY(-8px); 
+        top: 60px;
+    }
+
+    &__estandar{
+        position: absolute;
+        text-align: center;
+        transform: translatex(-10px);
+        bottom: -10px;
+    }
+    &__estandarTitulo{
+        transform: translateX(10px);
+    }
+
+    &__h4{
+        transform: translatex(17px);
+        width:50px;
+    }
+
 }

@@ -40,6 +40,22 @@ const Botones = () => {
                     <h3>E</h3>
                     <h3>F</h3>
                 </div>
+                <div className='botones__salidaRapida'>
+                    <h4 className='botones__titulo'>Salida rápida</h4>
+                    <h4 className='botones__h4'>1</h4>
+                    <h4 className='botones__h4'>2</h4>
+                    <h4 className='botones__h4'>3</h4>
+                    <h4 className='botones__h4'>4</h4>
+                    <h4 className='botones__h4'>5</h4>
+                </div>
+                <div className='botones__estandar'>
+                    <h4 className='botones__estandarTitulo'>Estándar</h4>
+                    <h4 className='botones__h4'>6</h4>
+                    <h4 className='botones__h4'>7</h4>
+                    <h4 className='botones__h4'>8</h4>
+                    <h4 className='botones__h4'>9</h4>
+                    <h4 className='botones__h4'>10</h4>
+                </div>
                 <div className='botones'>
 
                     {

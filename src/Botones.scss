@@ -1,0 +1,71 @@
+#d0,
+#d1,
+#d2,
+#d3,
+#d4,
+#d5,
+#d6,
+#d7,
+#d8,
+#d9,
+#d10 {
+    margin-left: 30px;
+}
+
+#a4,
+#b4,
+#c4,
+#d4,
+#e4,
+#f4 {
+    margin-bottom: 30px;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    width: 500px;
+    height: 500px;
+    gap: 5px;
+ 
+
+
+    &__caja {
+        width: 500px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__asientos {
+        display: flex;
+        width: 480px;
+        text-align: center;
+        justify-content: space-between;
+                
+    }
+
+    &__container {
+        color: transparent;
+        background-color: rgb(210, 210, 210);
+        border: solid 3px transparent;
+
+        &:focus {
+            border: solid 3px rgb(126, 32, 126);
+            background-color: white;
+        }
+
+        &:hover {
+            background: rgb(126, 32, 126);
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    &__filaD {
+        margin-left: 30px;
+    }
+}

@@ -1,9 +1,10 @@
 import React from 'react'
+import './Botones.scss'
 
 const getSeats = () => {
 
     const row = ['a', 'b', 'c', 'd', 'e', 'f']
-    let seats = new Array(50).fill(row)
+    let seats = new Array(10).fill(row)
 
 
 
@@ -18,7 +19,7 @@ const getSeats = () => {
                 col: j
             }
             return seat
-            
+
         })
     })
 }
@@ -29,13 +30,32 @@ const Botones = () => {
 
     return (
         <>
-            {
-                seats.map(row => row.map(seat => {
-                    console.log(seat)
-                    console.log(`seats[${seat.row}][${seat.col}]`);
+            <h1>Selecciona los asientos</h1>
+            <div className='botones__caja'>
+                <div className='botones__asientos'>
+                    <h3>A</h3>
+                    <h3>B</h3>
+                    <h3>C</h3>
+                    <h3>D</h3>
+                    <h3>E</h3>
+                    <h3>F</h3>
+                </div>
+                <div className='botones'>
 
-                }))
-            }
+                    {
+                        seats.map((row, i) => row.map(seat => {
+                            console.log(seat)
+                            console.log(`seats[${seat.row}][${seat.col}]`);
+                            return (
+                                <>
+                                    <button className="botones__container" id={seat.name} >{seat.row}</button>
+                                </>
+                            )
+
+                        }))
+                    }
+                </div>
+            </div>
         </>
     )
 
